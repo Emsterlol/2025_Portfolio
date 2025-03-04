@@ -10,7 +10,7 @@
     --font-body: 'Playfair Display', serif;
 }
 
-/* Body FrameWork */
+/* Body Framework */
 * {
     margin: 0;
     padding: 0;
@@ -29,12 +29,27 @@ body {
     border-right: 140px solid var(--accent-color);
 }
 
+/* Responsive Borders */
+@media (max-width: 1024px) {
+    body {
+        border-left: 70px solid var(--accent-color);
+        border-right: 70px solid var(--accent-color);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        border-left: none;
+        border-right: none;
+    }
+}
+
 /* Header/Nav Bar */
 header {
     background-color: var(--primary-color);
     color: var(--neutral-white);
-    padding: 20px 40px;
-    height: 600px;
+    padding: 20px 5%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -48,6 +63,9 @@ header h1 {
 
 nav {
     margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a {
@@ -59,6 +77,19 @@ nav a {
 
 nav a:hover {
     color: var(--accent-color);
+}
+
+/* Header/Nav Bar Mobile */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    nav {
+        justify-content: center;
+    }
 }
 
 /* Showcase Containers */
@@ -73,7 +104,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 40px 0;
 }
@@ -91,26 +122,28 @@ nav a:hover {
     gap: 20px;
 }
 
-.card img {
+/* Responsive Cards */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .card img {
+        max-width: 100%;
+        height: auto;
+        
+    }
+}
+
+.bio-photo {
+    width: 100%;
     max-width: 250px;
     border-radius: 10px;
 }
 
-.card-content {
-    flex: 1;
-}
 
-.card-content h2 {
-    font-family: var(--font-header);
-    font-size: 1.5rem;
-    margin: 0 0 10px;
-    color: var(--accent-color);
-}
-
-.card-content p {
-    margin: 0;
-}
-
+/* Button */
 .cta {
     background-color: var(--accent-color);
     color: var(--neutral-white);
@@ -166,4 +199,12 @@ footer a:hover {
 
 .social-buttons a img:hover {
     transform: scale(1.2);
+}
+
+/* Responsive Social Icons */
+@media (max-width: 480px) {
+    .social-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
