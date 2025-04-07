@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <img src="Photos/flowers-8009505_1280.jpg" alt="Floral banner with pink and white flowers">
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#ux-ui">UX/UI Projects</a>
+            <a href="#showcase">Website Showcase</a>
+            <a href="#contact">Contact</a>
+            <a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        </nav>
+    </header>
+
+    <section class="container" id="about">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="card js--fadeInLeft">
+            <img src="Photos/Emmy.jpg" alt="Portrait of Emmy" class="showcase-photo">
+            <div class="card-content">
+                <h3>My name is Emmy!</h3>
+                <p>Hi there! I am a passionate web developer with a strong foundation in front-end technologies, UX/UI design, and database management. Currently in my final year at Wake Tech Community College, I’m earning my associate degree in web development, along with multiple certifications in WordPress, React, JavaScript, and accessibility. I enjoy crafting user-friendly, responsive websites and have experience working with tools like Figma, Photoshop, and Canva to bring creative ideas to life. Beyond coding, I love hiking, reading fantasy and sci-fi books, baking, and playing video games—especially JRPGs. I’m always excited to learn new technologies and take on projects that challenge me to grow as a developer. Feel free to check out my work and connect with me!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="ux-ui">
+        <h2 class="section-title reveal">UX/UI Design</h2>
+        <div class="card js--fadeInLeft">
+            <img src="Photos/UXandUI Linkedin.PNG" alt="Screenshot of LinkedIn Learning certificates" class="showcase-photo">
+            <div class="card-content">
+                <h3>LinkedIn Learning</h3>
+                <p>Wake Tech offered me a lot of training for Web Development and here are the certifications I earned that are UX/UI Design related!</p>
+                <a href="https://www.linkedin.com/learning-login/share?account=56744281" class="cta" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+        </div>
+        <div class="card js--fadeInRight">
+            <img src="Photos/EmpathyMap.JPG" alt="User journey and empathy map screenshot" class="showcase-photo">
+            <div class="card-content">
+                <h3>User Journey and Empathy Maps: GeoPhoto</h3>
+                <p>This UX project explores user behavior and emotional touchpoints through user journey mapping and empathy mapping. It showcases the GeoPhotos app’s empathy maps and user pain points. It was my first time stepping into the users' shoes to understand their perspective and the challenges they face while interacting with the app.</p>
+                <a href="https://docs.google.com/presentation/d/1elAK3MIYhSLD5I8Ixcx_Ahcd5FTVjAh3eyXLQxnytCY/edit?usp=sharing" class="cta" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+        </div>
+        <div class="card js--fadeInLeft">
+            <img src="Photos/GeoPhotoFigma.PNG" alt="Figma design screenshot of GeoPhoto" class="showcase-photo">
+            <div class="card-content">
+                <h3>Figma: GeoPhoto</h3>
+                <p>A Figma prototype project focused on layout, interactivity, and responsive design. This was my first full project using Figma, where I designed a photo-tracking app that tags image locations. The goal was to help users discover scenic nature spots, birdwatching areas, or urban attractions shared by others.</p>
+                <a href="https://www.figma.com/design/3tfSiR8uZB65qKTPwmPWIV/Geo-Photo" class="cta" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="showcase">
+        <h2 class="section-title reveal">Website Showcase</h2>
+        <div class="card js--fadeInLeft">
+            <img src="Photos/StyleHaven.PNG" alt="StyleHaven website screenshot" class="showcase-photo">
+            <div class="card-content">
+                <h3>StyleHaven</h3>
+                <p>StyleHaven is a fully functional website built using WordPress and the WooCommerce plugin, designed to showcase my skills in eCommerce and web development.</p>
+                <a href="https://wcet.waketech.edu/eehorne/WEB260/wordpress/" class="cta" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+        </div>
+        <div class="card js--fadeInRight">
+            <img src="Photos/WakeStore.PNG" alt="WakeStore website screenshot" class="showcase-photo">
+            <div class="card-content">
+                <h3>WakeStore</h3>
+                <p>WakeStores is an eCommerce website I built using Shopify, showcasing my skills in building and managing online stores.</p>
+                <a href="https://eehorne-wakestore.myshopify.com/" class="cta" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <h2 class="section-title reveal">Contact Me</h2>
+        <div class="card js--fadeInLeft">
+            <div class="card-content">
+                <h3>Contact</h3>
+                <p>Feel free to reach out via the form below:</p>
+                <form action="submit_form.php" method="POST" class="contact-form" aria-label="Contact Form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-input" rows="4" placeholder="Type your message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>    
+
+    <footer>
+        <p>&copy; 2025 Emmy Horne. All rights reserved.</p>
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/emily-horne-101497302/" target="_blank" aria-label="LinkedIn Profile" rel="noopener noreferrer">
+                <img src="Photos/Icons/linkedin-48.png" alt="LinkedIn icon">
+            </a>
+            <a href="mailto:horne.e.emily@gmail.com" aria-label="Email Me">
+                <img src="Photos/Icons/email-48.png" alt="Email icon">
+            </a>
+            <a href="https://github.com/Emsterlol" target="_blank" aria-label="GitHub Profile" rel="noopener noreferrer">
+                <img src="Photos/Icons/github-48.png" alt="GitHub icon">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sr = ScrollReveal({
+                distance: '300px',
+                easing: 'ease-in-out',
+                duration: 800,
+                reset: false
+            });
+
+            const isMobile = window.innerWidth < 768;
+
+            const fadeInLeftElements = document.querySelectorAll('.js--fadeInLeft');
+            const fadeInRightElements = document.querySelectorAll('.js--fadeInRight');
+
+            if (isMobile) {
+                fadeInLeftElements.forEach(el => {
+                    el.classList.remove('js--fadeInLeft');
+                    el.classList.add('js--fadeInRight');
+                });
+            }
+
+            sr.reveal('.js--fadeInLeft', { origin: 'left' });
+            sr.reveal('.js--fadeInRight', { origin: 'right' });
+        });
+    </script>
+</body>
+</html>
